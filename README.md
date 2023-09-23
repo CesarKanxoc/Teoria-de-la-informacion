@@ -29,11 +29,11 @@ Mi codigo lo cree con ayuda de chat gpt y de ahi lo fui modificando usando igual
 
 # Codigo
  #Generador por cht gpt
-import random
-import base64
-import re
+ import random
+ import base64
+ import re
 
-def encode_book(file_path):
+ def encode_book(file_path):
     try:
         with open(file_path, "rb") as archivo:
             file_content = archivo.read()
@@ -46,7 +46,7 @@ def encode_book(file_path):
         print(f"El archivo '{file_path}' no se encontró.")
         return []
 
-def apply_wifi_noise(packet, reverse=False):
+ def apply_wifi_noise(packet, reverse=False):
     if reverse:
         cleaned_packet = packet[::-1]
         return cleaned_packet
@@ -57,7 +57,7 @@ def apply_wifi_noise(packet, reverse=False):
             return packet[::-1]
         return packet
 
-def simulate_wifi_channel(packets):
+ def simulate_wifi_channel(packets):
     noisy_packets = []
     for packet in packets:
         noisy_packet = apply_wifi_noise(packet, reverse=False)
@@ -65,7 +65,7 @@ def simulate_wifi_channel(packets):
             noisy_packets.append(noisy_packet)
     return noisy_packets
 
-def decode_packets(noisy_packets):
+ def decode_packets(noisy_packets):
     cleaned_packets = []
     for noisy_packet in noisy_packets:
         cleaned_packet = apply_wifi_noise(noisy_packet, reverse=True)
@@ -73,7 +73,7 @@ def decode_packets(noisy_packets):
             cleaned_packets.append(cleaned_packet)
     return cleaned_packets
 
-def reconstruct_book(cleaned_packets):
+ def reconstruct_book(cleaned_packets):
     combined_data = b''.join(cleaned_packets)
     
     # Eliminar cualquier caracter que no sea válido en base64
