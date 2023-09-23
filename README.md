@@ -30,7 +30,8 @@ Mi codigo lo cree con ayuda de chat gpt y de ahi lo fui modificando usando igual
 
 # Codigo
 ```
-# Generador por cht gpt
+# Generador por chat gpt
+
 import random
 import base64
 import re
