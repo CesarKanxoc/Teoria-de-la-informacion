@@ -24,7 +24,7 @@ Una vez teniendo los datos originales, estos se subirán a la base de datos de l
 
 Mi codigo lo cree con ayuda de chat gpt y de ahi lo fui modificando usando igual chat gpt, esto fue lo que me entrego pasando los parametros del read y explicando que el canal era de wifi y luego le dije que sea un poco mas realista y cambio los parametros del ruido al igual le dije que introduciera la funcion para calcular la entropia y el resultado se puede ver en  **Medios_de_comunicacion_cambios**: 
 
-**Nota: mi codigo que si realice por mi propia cuenta fue el de **Medio_de_comunicacion_Basico**** 
+**Nota: mi codigo que si realice por mi propia cuenta fue el de _Medio_de_comunicacion_Basico_** 
 
 
 
